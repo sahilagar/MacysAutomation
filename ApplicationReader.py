@@ -22,8 +22,7 @@ def dataToHTML():
     head = """<HTML>
     <head>
     <style>
-        table, th, td {
-        border: 1px solid black;
+        table {
     }
         table {
         border-collapse: collapse;
@@ -32,7 +31,7 @@ def dataToHTML():
         width: 100%;
     }
         th {
-        height: 25px;
+        height: 5px;
     }
         th, td {
         padding: 15px;
@@ -140,12 +139,13 @@ def dataToHTML():
     webbrowser.open_new_tab('helloworld.html')
 
 def processLine(line):
-    info = line.split("-")[1]
+    info = line.split("-", 1)[1]
     info = info.split()
     info = " ".join(info)
     return info
 
 def requestApplication(application):
+    print("processing")
     instances = application.instances
     for instance in instances:
         expected = instance.expected

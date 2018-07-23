@@ -1,8 +1,6 @@
 APPLICATIONNAME- FCC Client Cell A
 FCC Client Cell A.SERVERNAME- esu2v735
 FCC Client Cell A.INSTANCE- fcc_perf1_esu3v061_client_m1 (Category)
-FCC Client Cell A.URL- http://esu3v061:8080/api/catalog/v2/categories/healthcheck 
-FCC Client Cell A.RESPONSE- 200
 FCC Client Cell A.URL- http://esu2v735:8180/api/catalog/v2/categories/healthcheck
 FCC Client Cell A.RESPONSE- 200
 FCC Client Cell A.RESPONSE- 200
@@ -14,20 +12,85 @@ FCC Client Cell A.RESPONSE- 200
 FCC Client Cell A.INSTANCE- fcc_perf1_esu2v735_client_m2 (SNS)
 FCC Client Cell A.URL- http://esu3v062:8080/api/catalog/v2/categories/healthcheck
 FCC Client Cell A.RESPONSE- 200
-APPLICATIONNAME- Application 2
-Application 2.SERVERNAME- esu2v735
-Application 2.INSTANCE- fcc_perf1_esu3v061_client_m1 (Category)
-Application 2.URL- http://esu3v061:8080/api/catalog/v2/categories/healthcheck 
-Application 2.RESPONSE- 200
-Application 2.URL- http://esu2v735:8180/api/catalog/v2/categories/healthcheck
-Application 2.RESPONSE- 200
-Application 2.RESPONSE- 2500
-Application 2.RESPONSE- 300
-Application 2.URL- http://esu2v735:8280/api/catalog/v2/categories/healthcheck
-Application 2.RESPONSE- 200
-Application 2.INSTANCE- fcc_perf1_esu2v735_client_m1 (Product)
-Application 2.URL- http://esu3v062:8080/api/catalog/v2/categories/healthcheck
-Application 2.RESPONSE- 200
-Application 2.INSTANCE- fcc_perf1_esu2v735_client_m2 (SNS)
-Application 2.URL- http://esu3v062:8080/api/catalog/v2/categories/healthcheck
-Application 2.RESPONSE- 200
+APPLICATIONNAME- BagApp_EWS
+BagApp_EWS.SERVERNAME- p001xsbag003
+BagApp_EWS.INSTANCE - macys_bagapp_ws1
+BagApp_EWS.URL-http://lp001xsbag0003:84/bag/index.ognc?CategoryID=16958
+BagApp_EWS.RESPONSE- 200
+BagApp_EWS.URL-http://lp001xsbag0003:84/bag/index.ognc?CategoryID=2910
+BagApp_EWS.RESPONSE- 200
+BagApp_EWS.URL-http://lp001xsbag0003:84/bag/index.ognc?CategoryID=2921
+BagApp_EWS.RESPONSE- 200
+BagApp_EWS.URL-http://lp001xsbag0003:84/bag/index.ognc?CategoryID=3865
+BagApp_EWS.RESPONSE- 200
+BagApp_EWS.URL-http://lp001xsbag0003:84/bag/index.ognc?cm_sp=NAVIGATION-_-TOP_NAV-_-BAG-n-n
+BagApp_EWS.RESPONSE- 200
+APPLICATIONNAME- SNB_EWS
+SNB_EWS.SERVERNAME- ln001xsdip0021
+SNB_EWS.INSTANCE - SNB Instance
+SNB_EWS.URL-http://ln001xsdip0021:84/shop/alexis-bittar?id=1003990&edge=hybrid&cm_kws=alex%20bittar
+SNB_EWS.RESPONSE- 200
+SNB_EWS.URL-http://ln001xsdip0021:84/shop/alexis-bittar?id=1003990&edge=hybrid&cm_kws=alexis%20bitar
+SNB_EWS.RESPONSE- 200
+SNB_EWS.URL-http://ln001xsdip0021:84/shop/alice-olivia?id=1003978&edge=hybrid&cm_kws=alice%20%20%20oliva
+SNB_EWS.RESPONSE- 200
+SNB_EWS.URL-http://ln001xsdip0021:84/shop/aqua?id=1002851&edge=hybrid&cm_kws=aqaua
+SNB_EWS.RESPONSE- 200
+SNB_EWS.URL-http://ln001xsdip0021:84/shop/aqua?id=1002851&edge=hybrid&cm_kws=aquar
+SNB_EWS.RESPONSE- 200
+SNB_EWS.URL-http://ln001xsdip0021:84/shop/aqua?id=1002851&edge=hybrid&cm_kws=aquia
+SNB_EWS.RESPONSE- 200
+SNB_EWS.URL-http://ln001xsdip0021:84/shop/aqua/womens-clothing?id&
+SNB_EWS.RESPONSE- 200
+SNB_EWS.URL-http://ln001xsdip0021:84/shop/burberry/mens-clothing-cologne?id&
+SNB_EWS.RESPONSE- 200
+SNB_EWS.URL-http://ln001xsdip0021:84/shop/search/facet?keyword=alexi+bittar&NORMAL=Gold&facetName=NORMAL&bcomNavPPP=90
+SNB_EWS.RESPONSE- 200
+SNB_EWS.URL-http://ln001xsdip0021:84/shop/search/facet?keyword=alexi+bittar&TYPE=Earrings&facetName=TYPE&bcomNavPPP=90
+SNB_EWS.RESPONSE- 200
+SNB_EWS.URL-http://ln001xsdip0021:84/shop/search/facet?keyword=alexis+bitar&DEPARTMENT=Earrings&facetName=DEPARTMENT&facet=false&sortBy=NEW_ITEMS&bcomNavPPP=90
+SNB_EWS.RESPONSE- 200
+SNB_EWS.URL-http://ln001xsdip0021:84/shop/search/facet?keyword=alexis+bitar&TYPE=Earrings&facetName=TYPE&facet=false&sortBy=NEW_ITEMS&bcomNavPPP=90
+SNB_EWS.RESPONSE- 200
+SNB_EWS.URL-http://ln001xsdip0021:84/shop/vince-camuto?id=1004133&edge=hybrid&cm_kws=vincent%20camuto
+SNB_EWS.RESPONSE- 200
+SNB_EWS.URL-http://ln001xsdip0021:84/shop/womens-apparel/designer-cocktail-dresses?id&
+SNB_EWS.RESPONSE- 200
+SNB_EWS.URL-http://ln001xsdip0021:84/shop/womens-apparel/formal-dresses-evening-gowns?id&
+SNB_EWS.RESPONSE- 200
+SNB_EWS.URL-http://ln001xsdip0021:84/shop/womens-apparel/lingerie-bras-panties-shapewear?id&
+SNB_EWS.RESPONSE- 200
+SNB_EWS.URL-http://ln001xsdip0021:84/shop/womens-apparel/shorts?id&
+SNB_EWS.RESPONSE- 200
+SNB_EWS.URL-http://ln001xsdip0021:84/shop/womens-apparel/sweaters?id&
+SNB_EWS.RESPONSE- 200
+SNB_EWS.URL-http://ln001xsdip0021:84/shop/womens-apparel/womens-swimsuits?id&
+SNB_EWS.RESPONSE- 200
+APPLICATIONNAME- Account_EWS
+Account_EWS.SERVERNAME- ln001xsacw0003
+Account_EWS.INSTANCE - EWS Cell A
+Account_EWS.URL-http://ln001xsacw0003:84/account/createaccount?cm_sp=FOOTER-_-BOTTOM_NAV-_-MY_PROFILE&SESS_COOKIE_REDIRECT_DONE=true
+Account_EWS.RESPONSE- 200
+Account_EWS.URL-http://ln001xsacw0003:84/account/createaccount?cm_sp=my_account-_-sign_in-_-create_account&SESS_COOKIE_REDIRECT_DONE=true
+Account_EWS.RESPONSE- 200
+Account_EWS.URL-http://ln001xsacw0003:84/account/signin?cm_sp=FOOTER-_-BOTTOM_NAV-_-pay_bill&SESS_COOKIE_REDIRECT_DONE=true
+Account_EWS.RESPONSE- 200
+Account_EWS.URL-http://ln001xsacw0003:84/account/signin?cm_sp=NAVIGATION_REG-_-TOP_NAV-_-MY_ACCOUNT-n-n&SESS_COOKIE_REDIRECT_DONE=true
+Account_EWS.RESPONSE- 200
+Account_EWS.URL-http://ln001xsacw0003:84/account/signin?cm_sp=NAVIGATION-_-TOP_NAV-_-MY_ACCOUNT-n-
+Account_EWS.RESPONSE- 200
+Account_EWS.URL-http://ln001xsacw0003:84/account/signin?cm_sp=NAVIGATION-_-TOP_NAV-_-MY_ACCOUNT-n-n&SESS_COOKIE_REDIRECT_DONE=true
+Account_EWS.RESPONSE- 200
+Account_EWS.URL-http://ln001xsacw0003:84/account/signin?fromCheckout=fromCheckout
+Account_EWS.RESPONSE- 200
+Account_EWS.URL-http://ln001xsacw0003:84/myaccount/home?cm_sp=my_account-_-account-_-my_account
+Account_EWS.RESPONSE- 200
+Account_EWS.URL-http://ln001xsacw0003:84/myaccount/home?cm_sp=NAVIGATION-_-TOP_NAV-_-MY_ACCOUNT-n-n
+Account_EWS.RESPONSE- 200
+Account_EWS.URL-http://ln001xsacw0003:84/myaccount/home?FromSignin=true
+Account_EWS.RESPONSE- 200
+Account_EWS.URL-http://ln001xsacw0003:84/myaccount/home?storeId=345&mobile=false
+Account_EWS.RESPONSE- 200
+Account_EWS.URL-http://ln001xsacw0003:84/registry/wedding/registrysignin
+Account_EWS.RESPONSE- 200
+
