@@ -1,0 +1,48 @@
+<HTML>
+    <head>
+    <style>
+        table, th, td {
+        border: 1px solid black;
+    }
+        table {
+        border-collapse: collapse;
+    }
+        table {
+        width: 100%;
+    }
+        th {
+        height: 25px;
+    }
+        th, td {
+        padding: 15px;
+        text-align: left;
+    }
+        #content img {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 15%;
+            height: auto;
+            
+    }
+    </style>
+    </head>
+    <body>
+        <div id="content">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Macys_logo.svg/1280px-Macys_logo.svg.png" class="ribbon"/>
+        </div>
+        <h1>Responses</h1>
+        <table>
+            <tr>
+                <th>Application Name</th>
+                <th>Server</th>
+                <th>Instance</th>
+                <th>URL</th>
+                <th>Expected</th>
+                <th>Actual</th>
+                <th>Result</th>
+            </tr>
+            <tr><td>FCC Client Cell A</td><td>esu2v735</td><td>fcc_perf1_esu3v061_client_m1 (Category)</td><td>http://esu3v061:8080/api/catalog/v2/categories/healthcheck</td><td>200</td><td>Unable to connect</td><td bgcolor="#FF0000">Fail</td></tr><tr><td>FCC Client Cell A</td><td>esu2v735</td><td>fcc_perf1_esu3v061_client_m1 (Category)</td><td>http://esu2v735:8180/api/catalog/v2/categories/healthcheck</td><td>200</td><td>200</td><td bgcolor="#00FF00">Pass</td></tr><tr><td>FCC Client Cell A</td><td>esu2v735</td><td>fcc_perf1_esu3v061_client_m1 (Category)</td><td>http://esu2v735:8180/api/catalog/v2/categories/healthcheck</td><td>200</td><td>200</td><td bgcolor="#00FF00">Pass</td></tr><tr><td>FCC Client Cell A</td><td>esu2v735</td><td>fcc_perf1_esu3v061_client_m1 (Category)</td><td>http://esu2v735:8280/api/catalog/v2/categories/healthcheck</td><td>200</td><td>200</td><td bgcolor="#00FF00">Pass</td></tr><tr><td>FCC Client Cell A</td><td>esu2v735</td><td>fcc_perf1_esu2v735_client_m1 (Product)</td><td>http://esu3v062:8080/api/catalog/v2/categories/healthcheck</td><td>200</td><td>404</td><td bgcolor="#FF0000">Fail</td></tr><tr><td>FCC Client Cell A</td><td>esu2v735</td><td>fcc_perf1_esu2v735_client_m2 (SNS)</td><td>http://esu3v062:8080/api/catalog/v2/categories/healthcheck</td><td>200</td><td>404</td><td bgcolor="#FF0000">Fail</td></tr><tr><td>Application 2</td><td>esu2v735</td><td>fcc_perf1_esu3v061_client_m1 (Category)</td><td>http://esu3v061:8080/api/catalog/v2/categories/healthcheck</td><td>200</td><td>Unable to connect</td><td bgcolor="#FF0000">Fail</td></tr><tr><td>Application 2</td><td>esu2v735</td><td>fcc_perf1_esu3v061_client_m1 (Category)</td><td>http://esu2v735:8180/api/catalog/v2/categories/healthcheck</td><td>200</td><td>200</td><td bgcolor="#00FF00">Pass</td></tr><tr><td>Application 2</td><td>esu2v735</td><td>fcc_perf1_esu3v061_client_m1 (Category)</td><td>http://esu2v735:8180/api/catalog/v2/categories/healthcheck</td><td>2500</td><td>200</td><td bgcolor="#FF0000">Fail</td></tr><tr><td>Application 2</td><td>esu2v735</td><td>fcc_perf1_esu3v061_client_m1 (Category)</td><td>http://esu2v735:8180/api/catalog/v2/categories/healthcheck</td><td>300</td><td>200</td><td bgcolor="#FF0000">Fail</td></tr><tr><td>Application 2</td><td>esu2v735</td><td>fcc_perf1_esu3v061_client_m1 (Category)</td><td>http://esu2v735:8280/api/catalog/v2/categories/healthcheck</td><td>200</td><td>200</td><td bgcolor="#00FF00">Pass</td></tr><tr><td>Application 2</td><td>esu2v735</td><td>fcc_perf1_esu2v735_client_m1 (Product)</td><td>http://esu3v062:8080/api/catalog/v2/categories/healthcheck</td><td>200</td><td>404</td><td bgcolor="#FF0000">Fail</td></tr><tr><td>Application 2</td><td>esu2v735</td><td>fcc_perf1_esu2v735_client_m2 (SNS)</td><td>http://esu3v062:8080/api/catalog/v2/categories/healthcheck</td><td>200</td><td>404</td><td bgcolor="#FF0000">Fail</td></tr>
+        </table>
+    </body>
+    </HTML>

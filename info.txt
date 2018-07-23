@@ -1,0 +1,33 @@
+APPLICATIONNAME- FCC Client Cell A
+FCC Client Cell A.SERVERNAME- esu2v735
+FCC Client Cell A.INSTANCE- fcc_perf1_esu3v061_client_m1 (Category)
+FCC Client Cell A.URL- http://esu3v061:8080/api/catalog/v2/categories/healthcheck 
+FCC Client Cell A.RESPONSE- 200
+FCC Client Cell A.URL- http://esu2v735:8180/api/catalog/v2/categories/healthcheck
+FCC Client Cell A.RESPONSE- 200
+FCC Client Cell A.RESPONSE- 200
+FCC Client Cell A.URL- http://esu2v735:8280/api/catalog/v2/categories/healthcheck
+FCC Client Cell A.RESPONSE- 200
+FCC Client Cell A.INSTANCE- fcc_perf1_esu2v735_client_m1 (Product)
+FCC Client Cell A.URL- http://esu3v062:8080/api/catalog/v2/categories/healthcheck
+FCC Client Cell A.RESPONSE- 200
+FCC Client Cell A.INSTANCE- fcc_perf1_esu2v735_client_m2 (SNS)
+FCC Client Cell A.URL- http://esu3v062:8080/api/catalog/v2/categories/healthcheck
+FCC Client Cell A.RESPONSE- 200
+APPLICATIONNAME- Application 2
+Application 2.SERVERNAME- esu2v735
+Application 2.INSTANCE- fcc_perf1_esu3v061_client_m1 (Category)
+Application 2.URL- http://esu3v061:8080/api/catalog/v2/categories/healthcheck 
+Application 2.RESPONSE- 200
+Application 2.URL- http://esu2v735:8180/api/catalog/v2/categories/healthcheck
+Application 2.RESPONSE- 200
+Application 2.RESPONSE- 2500
+Application 2.RESPONSE- 300
+Application 2.URL- http://esu2v735:8280/api/catalog/v2/categories/healthcheck
+Application 2.RESPONSE- 200
+Application 2.INSTANCE- fcc_perf1_esu2v735_client_m1 (Product)
+Application 2.URL- http://esu3v062:8080/api/catalog/v2/categories/healthcheck
+Application 2.RESPONSE- 200
+Application 2.INSTANCE- fcc_perf1_esu2v735_client_m2 (SNS)
+Application 2.URL- http://esu3v062:8080/api/catalog/v2/categories/healthcheck
+Application 2.RESPONSE- 200
