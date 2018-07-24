@@ -93,4 +93,51 @@ Account_EWS.URL-http://ln001xsacw0003:84/myaccount/home?storeId=345&mobile=false
 Account_EWS.RESPONSE- 200
 Account_EWS.URL-http://ln001xsacw0003:84/registry/wedding/registrysignin
 Account_EWS.RESPONSE- 200
+APPLICATIONNAME- Wallet_EWS
+Wallet_EWS.SERVERNAME- ln001xswdp0019
+Wallet_EWS.INSTANCE - wallet_ws1
+Wallet_EWS.URL-http://ln001xswdp0019:84/shop/coupons-sales-promotions
+Wallet_EWS.RESPONSE- 200
+Wallet_EWS.URL-http://ln001xswdp0019:84/shop/coupons-sales-promotions?
+Wallet_EWS.RESPONSE- 200
+Wallet_EWS.URL-http://ln001xswdp0019:84/shop/coupons-sales-promotions?bonus-offers-link=true
+Wallet_EWS.RESPONSE- 200
+Wallet_EWS.URL-http://ln001xswdp0019:84/shop/coupons-sales-promotions?cm_sp&
+Wallet_EWS.RESPONSE- 200
+Wallet_EWS.URL-http://ln001xswdp0019:84/shop/coupons-sales-promotions?cm_sp=HEADER-_-WALLET-_-SALES-&-PROMOTIONS-See-All
+Wallet_EWS.RESPONSE- 200
+Wallet_EWS.URL-http://ln001xswdp0019:84/shop/coupons-sales-promotions?cm_sp=LEFTNAV_INT-_-sale-_-Header-OFFERS_%26_PROMOTIONS&intnl=true
+Wallet_EWS.RESPONSE- 200
+Wallet_EWS.URL-http://ln001xswdp0019:84/shop/coupons-sales-promotions?cm_sp=LEFTNAV-_-sale-_-Header-OFFERS_%26_PROMOTIONS
+Wallet_EWS.RESPONSE- 200
+Wallet_EWS.URL-http://ln001xswdp0019:84/shop/coupons-sales-promotions?cm_sp=LEFTNAV-_-sale-_-Header-SALES_%26_PROMOTIONS
+Wallet_EWS.RESPONSE- 200
+Wallet_EWS.URL-http://ln001xswdp0019:84/shop/coupons-sales-promotions?cm_sp=NAVIGATION_INTL-_-TOP_NAV-_-3977-OFFERS-AND-PROMOTIONS-See-All&intnl=true
+Wallet_EWS.RESPONSE- 200
+Wallet_EWS.URL-http://ln001xswdp0019:84/shop/coupons-sales-promotions?cm_sp=NAVIGATION-_-TOP_NAV-_-3977-CATEGORY_ICON_IMAGE-See-All&bonus-offers-link=true
+Wallet_EWS.RESPONSE- 200
+Wallet_EWS.URL-http://ln001xswdp0019:84/shop/coupons-sales-promotions?cm_sp=NAVIGATION-_-TOP_NAV-_-3977-CATEGORY_ICON_IMAGE-See-All&EFCKEY=%257B%2522EXPERIMENT%2522%253A%255B2144%255D%257D&SEED=3115902636909138406&intnl=true&channel=mobile&ppp=20&intnl=true
+Wallet_EWS.RESPONSE- 200
+Wallet_EWS.URL-http://ln001xswdp0019:84/shop/coupons-sales-promotions?cm_sp=NAVIGATION-_-TOP_NAV-_-3977-CATEGORY_ICON_IMAGE-See-All&EFCKEY=%257B%2522EXPERIMENT%2522%253A%255B2144%255D%257D&SEED=3115902636909138406&intnl=true&intnl=true
+Wallet_EWS.RESPONSE- 200
+Wallet_EWS.URL-http://ln001xswdp0019:84/shop/coupons-sales-promotions?cm_sp=NAVIGATION-_-TOP_NAV-_-3977-OFFERS-AND-PROMOTIONS-See-All
+Wallet_EWS.RESPONSE- 200
+Wallet_EWS.URL-http://ln001xswdp0019:84/shop/coupons-sales-promotions?cm_sp=NAVIGATION-_-TOP_NAV-_-3977-PROMOTIONS-HAPPENING-NOW-See-All
+Wallet_EWS.RESPONSE- 200
+Wallet_EWS.URL-http://ln001xswdp0019:84/shop/coupons-sales-promotions?cm_sp=NAVIGATION-_-TOP_NAV-_-3977-SALES-%26-PROMOTIONS-See-All&channel=mobile&ppp=20&EFCKEY=%7B%22EXPERIMENT%22%3A%5B2144%5D%7D&SEED=4566074086375035366&intnl=true
+Wallet_EWS.RESPONSE- 200
+Wallet_EWS.URL-http://ln001xswdp0019:84/shop/coupons-sales-promotions?cm_sp=NAVIGATION-_-TOP_NAV-_-3977-SALES-%26-PROMOTIONS-See-All&channel=mobile&ppp=20&EFCKEY=%7B%22EXPERIMENT%22%3A%5B2144%5D%7D&SEED=744330959918469606
+Wallet_EWS.RESPONSE- 200
+Wallet_EWS.URL-http://ln001xswdp0019:84/shop/coupons-sales-promotions?cm_sp=NAVIGATION-_-TOP_NAV-_-3977-SALES-%26-PROMOTIONS-See-All-Promotions
+Wallet_EWS.RESPONSE- 200
+Wallet_EWS.URL-http://ln001xswdp0019:84/shop/coupons-sales-promotions?EFCKEY=%257B%2522EXPERIMENT%2522%253A%255B2144%255D%257D&SEED=-8894260441808367130
+Wallet_EWS.RESPONSE- 200
+Wallet_EWS.URL-http://ln001xswdp0019:84/shop/coupons-sales-promotions?EFCKEY=%257B%2522EXPERIMENT%2522%253A%255B2144%255D%257D&SEED=-8894260441808367130&channel=mobile&ppp=20
+Wallet_EWS.RESPONSE- 200
+Wallet_EWS.URL-http://ln001xswdp0019:84/shop/coupons-sales-promotions?ranMID=13867&ranEAID=FPWseZFEpyY&ranSiteID=FPWseZFEpyY-.aSiX9vrGTBtPw7LH2cLVw&LinkshareID=FPWseZFEpyY-.aSiX9vrGTBtPw7LH2cLVw&PartnerID=LINKSHARE&cm_mmc=LINKSHARE-_-n-_-n-_-n&ranPublisherID=FPWseZFEpyY&ranLinkID=1&ranLinkTypeID=10&pubNAME=Groupon&intnl=true
+Wallet_EWS.RESPONSE- 200
+Wallet_EWS.URL-http://ln001xswdp0019:84/shop/coupons-sales-promotions?ranMID=13867&ranEAID=FPWseZFEpyY&ranSiteID=FPWseZFEpyY-GM5MchPl9S9rfEm0J2SU_g&LinkshareID=FPWseZFEpyY-GM5MchPl9S9rfEm0J2SU_g&PartnerID=LINKSHARE&cm_mmc=LINKSHARE-_-n-_-n-_-n&ranPublisherID=FPWseZFEpyY&ranLinkID=1&ranLinkTypeID=10&pubNAME=Groupon
+Wallet_EWS.RESPONSE- 200
+Wallet_EWS.URL-http://ln001xswdp0019:84/shop/coupons-sales-promotions?ranMID=13867&ranEAID=FPWseZFEpyY&ranSiteID=FPWseZFEpyY-p0WTyI48qw_.MHgElzIdwQ&LinkshareID=FPWseZFEpyY-p0WTyI48qw_.MHgElzIdwQ&PartnerID=LINKSHARE&cm_mmc=LINKSHARE-_-n-_-n-_-n&ranPublisherID=FPWseZFEpyY&ranLinkID=1&ranLinkTypeID=10&pubNAME=Groupon
+Wallet_EWS.RESPONSE- 200
 
