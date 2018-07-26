@@ -8,9 +8,10 @@ import webbrowser
 from multiprocessing.dummy import Pool as ThreadPool 
 from Application import Application
 from Application import Instance
+from Application import CodeResponse
 
 #----------------------------------------------------------------------------------------------------------------------------------
-CONFIGURATION_FILE = "info.txt"
+CONFIGURATION_FILE = "info2.txt"
 #----------------------------------------------------------------------------------------------------------------------------------
 applications = []
 
@@ -59,6 +60,7 @@ def dataToHTML():
                 <th>Server</th>
                 <th>Instance</th>
                 <th>URL</th>
+                <th>Attribute</th>
                 <th>Expected</th>
                 <th>Actual</th>
                 <th>Result</th>
@@ -76,13 +78,15 @@ def dataToHTML():
             urls = instance.urls
             for url in urls:
                 for i in range(len(expected[url])):
-                    expectedValue = expected[url][i]
-                    actualValue = actual[url][i]
+                    expectedValue = expected[url][i].response
+                    actualValue = actual[url][i].response
+                    code = expected[url][i].code
                     row = []
                     row.append(application.applicationName)
                     row.append(application.serverName)
                     row.append(instance.name)
                     row.append(url)
+                    row.append(code)
                     row.append(expectedValue)
                     row.append(actualValue)
                     if expectedValue == actualValue:
@@ -90,33 +94,6 @@ def dataToHTML():
                     else:
                         row.append("Fail")
                     items.append(row)
-                       
-            
-    
-    
-#     items = []
-#     for cell in cells:
-#         urlsToReponse = cell.getUrlAndResponse()
-#         urls = cell.getUrls()
-#         names = cell.getNames()
-#         responses = []
-#         for url in urls:
-#             responses.append(urlsToReponse[url])
-#         for i in range(len(urls)):
-#             row = []
-#             row.append(names[i])
-#             row.append(urls[i])
-#             row.append(responses[i])
-#             if responses[i] == 200:
-#                 row.append("Pass")
-#             else:
-#                 row.append("Fail")
-#             items.append(row)
-#     print(items)
-    
-    #tr = "<tr>{0}</tr>"
-    #td = "<td>{0}</td>"    
-    #subitems = [tr.format(''.join([td.format(a) for a in item])) for item in items]
     
     formatted = []
     for item in items:
@@ -138,8 +115,8 @@ def dataToHTML():
 
     webbrowser.open_new_tab('helloworld.html')
 
-def processLine(line):
-    info = line.split("-", 1)[1]
+def processLine(line, x = 1, y = 1):
+    info = line.split("-", x)[y]
     info = info.split()
     info = " ".join(info)
     return info
@@ -150,12 +127,20 @@ def requestApplication(application):
     for instance in instances:
         expected = instance.expected
         actual = instance.actual
-        for url in expected:
-            try:
-                resp = requests.get(url)
-                actual[url] = [str(resp.status_code)] * len(actual[url])
-            except requests.exceptions.RequestException as e:
-                print(e)
+        urls = instance.urls
+        for url in urls:
+            responses = []
+            for i in range(len(expected[url])):
+                code = expected[url][i].code
+                try:
+                    resp = requests.get(url)
+                    currCodeResponse = CodeResponse(code, str(getattr(resp, code)))
+                    responses.append(currCodeResponse)
+                except requests.exceptions.RequestException as e:
+                    currCodeResponse = CodeResponse(code, "Unable to Connect")
+                    responses.append(currCodeResponse)
+                    print(e)
+            actual[url] = responses
 
 with open(CONFIGURATION_FILE , 'r') as f:
     for line in f:
@@ -178,9 +163,10 @@ with open(CONFIGURATION_FILE , 'r') as f:
                         line = f.readline()
                         responses = []
                         while(line.startswith(applicationName + ".RESPONSE")):
-                            response = processLine(line)
+                            response = processLine(line, 2, 2)
+                            currCodeResponse = CodeResponse(processLine(line,2,1), response) 
                             line = f.readline()
-                            responses.append(response)
+                            responses.append(currCodeResponse)
                         urls[urlName] = responses
                     currInstance = Instance(instanceName, urls)
                     instances.append(currInstance)

@@ -41,3 +41,8 @@ class Instance(object):
         print(self.name)
         print(self.expected)
         print(self.actual)
+        
+class CodeResponse(object):
+    def __init__(self, code, response):
+        self.code = code
+        self.response = response
