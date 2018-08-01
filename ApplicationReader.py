@@ -63,6 +63,9 @@ def dataToHTML():
                 <th>Attribute</th>
                 <th>Expected</th>
                 <th>Actual</th>
+                <th>Attribute</th>
+                <th>Expected</th>
+                <th>Actual</th>
                 <th>Result</th>
             </tr>
             {0}
@@ -77,23 +80,30 @@ def dataToHTML():
             actual = instance.actual
             urls = instance.urls
             for url in urls:
+                result = "Pass"
+                attributes = ["N/A", "N/A"]
+                expectedResponses = ["N/A", "N/A"]
+                actualResponses = ["N/A", "N/A"]
+                
                 for i in range(len(expected[url])):
-                    expectedValue = expected[url][i].response
-                    actualValue = actual[url][i].response
-                    code = expected[url][i].code
-                    row = []
-                    row.append(application.applicationName)
-                    row.append(application.serverName)
-                    row.append(instance.name)
-                    row.append(url)
-                    row.append(code)
-                    row.append(expectedValue)
-                    row.append(actualValue)
-                    if expectedValue == actualValue:
-                        row.append("Pass")
-                    else:
-                        row.append("Fail")
-                    items.append(row)
+                    expectedResponses[i] = str(expected[url][i].response)
+                    actualResponses[i] = str(actual[url][i].response)
+                    attributes[i] = str(expected[url][i].code)
+                    if expectedResponses[i] != actualResponses[i]:
+                        result = "Fail"
+                row = []
+                row.append(application.applicationName)
+                row.append(application.serverName)
+                row.append(instance.name)
+                row.append(url)
+                row.append(attributes[0])
+                row.append(expectedResponses[0])
+                row.append(actualResponses[0])
+                row.append(attributes[1])
+                row.append(expectedResponses[1])
+                row.append(actualResponses[1])
+                row.append(result)
+                items.append(row)
     
     formatted = []
     for item in items:
