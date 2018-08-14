@@ -16,6 +16,7 @@ CONFIGURATION_FILE = "info2.txt"
 applications = []
 
 
+#takes the applications array and outputs all the data to an HTML page
 def dataToHTML():
     #https://stackoverflow.com/questions/33920896/table-within-an-html-document-using-python-list
     f = open('helloworld.html','w')
@@ -125,13 +126,16 @@ def dataToHTML():
 
     webbrowser.open_new_tab('helloworld.html')
 
-def processLine(line, x = 1, y = 1):
+
+
+#function that helps with the file reading
+def processLine(line, x = 1, y = 1): #function that helps read in the configuration file
     info = line.split("-", x)[y]
     info = info.split()
     info = " ".join(info)
     return info
 
-def requestApplication(application):
+def requestApplication(application): #takes a single application and reqests the urls provided in that application.
     print("processing")
     instances = application.instances
     for instance in instances:
@@ -152,6 +156,8 @@ def requestApplication(application):
                     print(e)
             actual[url] = responses
 
+
+# reading in the configuration file and storing all the data
 with open(CONFIGURATION_FILE , 'r') as f:
     for line in f:
         while line.startswith("APPLICATIONNAME-"):
@@ -184,9 +190,11 @@ with open(CONFIGURATION_FILE , 'r') as f:
                 applications.append(currApplication)
                         
 
+#calls the read application function on the applications array
 pool = ThreadPool(4) 
 pool.map(requestApplication, applications)
 pool.close()
 pool.join()
 
+#outputs data to an HTML folder
 dataToHTML()

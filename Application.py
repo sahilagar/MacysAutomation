@@ -3,7 +3,7 @@ import copy
 class Application(object):
 
 
-
+    #holds the application name, server name, and an array of instances
     def __init__(self, applicationName = "Not Set", serverName = "Not Set", instances = None):
         self.applicationName = applicationName
         self.serverName = serverName
@@ -20,7 +20,7 @@ class Application(object):
         
         
         
-class Instance(object):
+class Instance(object): #holds the instance name, an array of urls, and the expected results from these urls
 
     def __init__(self, name = "Not Set", expected = "Not Set"):
         self.name = name
@@ -42,7 +42,8 @@ class Instance(object):
         print(self.expected)
         print(self.actual)
         
-class CodeResponse(object):
+        
+class CodeResponse(object): #container to hold a code attribute of response, and the acutal reponse
     def __init__(self, code, response):
         self.code = code
         self.response = response

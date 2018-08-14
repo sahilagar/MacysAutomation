@@ -5,7 +5,7 @@ BagApp_EWS.URL-http://lp001xsbag0003:84/bag/index.ognc?CategoryID=16958
 BagApp_EWS.RESPONSE-status_code-404
 BagApp_EWS.RESPONSE-status_code-404
 BagApp_EWS.URL-http://lp001xsbag0003:84/bag/index.ognc?CategoryID=2910
-BagApp_EWS.RESPONSE-status_code-200
+BagApp_EWS.RESPONSE-status_code-404
 BagApp_EWS.URL-http://lp001xsbag0003:84/bag/index.ognc?CategoryID=2921
 BagApp_EWS.RESPONSE-status_code-200
 BagApp_EWS.URL-http://lp001xsbag0003:84/bag/index.ognc?CategoryID=3865
@@ -13,3 +13,33 @@ BagApp_EWS.RESPONSE-status_code-200
 BagApp_EWS.URL-http://lp001xsbag0003:84/bag/index.ognc?cm_sp=NAVIGATION-_-TOP_NAV-_-BAG-n-n
 BagApp_EWS.RESPONSE-status_code-404
 BagApp_EWS.RESPONSE-content-word
+APPLICATIONNAME- Wallet_EWS
+Wallet_EWS.SERVERNAME- p001xsbag003
+Wallet_EWS.INSTANCE - macys_bagapp_ws1
+Wallet_EWS.URL-http://lp001xsbag0003:84/bag/index.ognc?CategoryID=16958
+Wallet_EWS.RESPONSE-status_code-404
+Wallet_EWS.RESPONSE-status_code-404
+Wallet_EWS.URL-http://lp001xsbag0003:84/bag/index.ognc?CategoryID=2910
+Wallet_EWS.RESPONSE-status_code-200
+Wallet_EWS.URL-http://lp001xsbag0003:84/bag/index.ognc?CategoryID=2921
+Wallet_EWS.RESPONSE-status_code-200
+Wallet_EWS.URL-http://lp001xsbag0003:84/bag/index.ognc?CategoryID=3865
+Wallet_EWS.RESPONSE-status_code-200
+Wallet_EWS.URL-http://lp001xsbag0003:84/bag/index.ognc?cm_sp=NAVIGATION-_-TOP_NAV-_-BAG-n-n
+Wallet_EWS.RESPONSE-status_code-404
+Wallet_EWS.RESPONSE-content-word
+APPLICATIONNAME- Account_EWS
+Account_EWS.SERVERNAME- p001xsbag003
+Account_EWS.INSTANCE - macys_bagapp_ws1
+Account_EWS.URL-http://lp001xsbag0003:84/bag/index.ognc?CategoryID=16958
+Account_EWS.RESPONSE-status_code-404
+Account_EWS.RESPONSE-status_code-404
+Account_EWS.URL-http://lp001xsbag0003:84/bag/index.ognc?CategoryID=2910
+Account_EWS.RESPONSE-status_code-200
+Account_EWS.URL-http://lp001xsbag0003:84/bag/index.ognc?CategoryID=2921
+Account_EWS.RESPONSE-status_code-200
+Account_EWS.URL-http://lp001xsbag0003:84/bag/index.ognc?CategoryID=3865
+Account_EWS.RESPONSE-status_code-200
+Account_EWS.URL-http://lp001xsbag0003:84/bag/index.ognc?cm_sp=NAVIGATION-_-TOP_NAV-_-BAG-n-n
+Account_EWS.RESPONSE-status_code-404
+Account_EWS.RESPONSE-content-word
